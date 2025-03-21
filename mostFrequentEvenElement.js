@@ -33,6 +33,7 @@ const mostFrequentEven = (nums) => {
 
   const singleNumbers = new Set(evenArray);
 
+  //use let ... of,  if you use let .. in you take the index but let ...of takes the value
   for (let number of singleNumbers) {
     const appearances = evenArray.filter((n) => n == number).length;
 
